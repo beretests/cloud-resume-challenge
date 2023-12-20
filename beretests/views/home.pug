@@ -1,0 +1,277 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  .KW_progressContainer
+      .KW_progressBar
+  .page
+      nav#colorlib-main-nav(role='navigation')
+      a.js-colorlib-nav-toggle.colorlib-nav-toggle.active(href='#')
+          i
+      .js-fullheight.colorlib-table
+          .img(style='background-image: url(images/author-2.jpg);')
+          .colorlib-table-cell.js-fullheight
+          .row.no-gutters
+              .col-md-12.text-center
+              h1.mb-4
+                  a.logo(href='index.html') Beckham Muff
+              ul
+                  li.active
+                  a(href='index')
+                      span
+                      small 01
+                      | Index
+                  li
+                  a(href='about.html')
+                      span
+                      small 02
+                      | Resume
+                  li
+                  a(href='services.html')
+                      span
+                      small 03
+                      | Services
+                  li
+                  a(href='portfolio.html')
+                      span
+                      small 04
+                      | Portfolio
+                  li
+                  a(href='blog.html')
+                      span
+                      small 05
+                      | Blog
+                  li
+                  a(href='contact.html')
+                      span
+                      small 06
+                      | Contact
+      #colorlib-page
+      header
+          .container
+          .row
+              .col-md-12
+              .colorlib-navbar-brand
+                  a.colorlib-logo(href='index.html')
+                  span.logo-img(style='background-image: url(images/person_1.jpg);')
+                  | Beckham Muff
+              a.js-colorlib-nav-toggle.colorlib-nav-toggle(href='#')
+                  i
+      section.home-slider.owl-carousel.js-fullheight
+          .slider-item.js-fullheight
+          .overlay
+          .container
+              .row.slider-text.align-items-center.text-center.justify-content-center(data-scrollax-parent='true')
+              .col-md-12.ftco-animate(data-scrollax=" properties: { translateY: '70%' }")
+                  p
+                  a.scroll(href='#') Hello! I&apos;m
+                  h1.mb-3(data-scrollax="properties: { translateY: '30%', opacity: 1.6 }") Beckham Muff
+          .slider-item.js-fullheight
+          .overlay
+          .container
+              .row.slider-text.align-items-center.text-center.justify-content-center(data-scrollax-parent='true')
+              .col-md-12.ftco-animate(data-scrollax=" properties: { translateY: '70%' }")
+                  p
+                  a.scroll(href='#') I&apos;m from Berlin
+                  h1.mb-3(data-scrollax="properties: {translateY: '30%', opacity: 1.6}") A Web Designer
+      section.ftco-section.about-section
+          .container
+          .row.d-flex(data-scrollax-parent='true')
+              .col-md-4.author-img(style='background-image: url(images/author-1.jpg);', data-scrollax=" properties: { translateY: '-70%'}")
+              .col-md-2
+              .col-md-6.wrap.ftco-animate
+              .about-desc
+                  h1.bold-text About
+                  .p-5
+                  h2.mb-5 Hi! I&apos;m Beckham Muff
+                  p
+                      | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in.
+                  p
+                      a(href='#') Checkout my resume
+                  ul.ftco-footer-social.list-unstyled.mt-4
+                      li
+                      a(href='#')
+                          span.icon-twitter
+                      li
+                      a(href='#')
+                          span.icon-facebook
+                      li
+                      a(href='#')
+                          span.icon-instagram
+                  h5 Contact me here!
+                  p
+                      | Email: 
+                      a(href='#') beckham@email
+                  p
+                      | Phone: 
+                      a(href='#') (123)-456-789
+      section.ftco-section
+          .container
+          .row.justify-content-center.mb-5.pb-5
+              .col-md-7.text-center.heading-section.ftco-animate
+              span What i do
+              h2 My services
+          .row
+              .col-md-4.d-flex.align-self-stretch.ftco-animate
+              .media.block-6.services.p-3.py-4.d-block.text-center
+                  .icon.mb-3
+                  span.icon-layers
+                  .media-body
+                  h3.heading UI/UX Design
+                  h3.heading Mobile App Design
+                  h3.heading Responsive Design
+              .col-md-4.d-flex.align-self-stretch.ftco-animate
+              .media.block-6.services.p-3.py-4.d-block.text-center
+                  .icon.mb-3
+                  span.icon-gears
+                  .media-body
+                  h3.heading Product Strategy
+                  h3.heading Design Sprints
+                  h3.heading UX Strategy
+              .col-md-4.d-flex.align-self-stretch.ftco-animate
+              .media.block-6.services.p-3.py-4.d-block.text-center
+                  .icon.mb-3
+                  span.icon-code
+                  .media-body
+                  h3.heading HTML/CSS
+                  h3.heading Prototyping
+                  h3.heading User Testing
+      section.ftco-section
+          .container
+          .row.justify-content-center.mb-5.pb-5
+              .col-md-7.text-center.heading-section.ftco-animate
+              span Portfolio
+              h2 Checkout a few of my works
+          .row.no-gutters
+              .block-3.d-md-flex.ftco-animate(data-scrollax-parent='true')
+              a.image.d-flex.justify-content-center.align-items-center(href='portfolio-single.html', style="background-image: url('images/work-1.jpg'); ", data-scrollax=" properties: { translateY: '-30%'}")
+                  .icon.d-flex.text-center.justify-content-center.align-items-center
+                  span.icon-search
+              .text
+                  h4.subheading Illustration
+                  h2.heading
+                  a(href='portfolio-single.html') Even the all-powerful Pointing has no control
+                  p
+                  | Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text.
+                  p
+                  a(href='#') View Project
+              .block-3.d-md-flex.ftco-animate(data-scrollax-parent='true')
+              a.image.order-2.d-flex.justify-content-center.align-items-center(href='portfolio-single.html', style="background-image: url('images/work-2.jpg'); ", data-scrollax=" properties: { translateY: '-30%'}")
+                  .icon.d-flex.text-center.justify-content-center.align-items-center
+                  span.icon-search
+              .text.order-1
+                  h4.subheading Application
+                  h2.heading
+                  a(href='portfoli-singleo.html') Even the all-powerful Pointing has no control
+                  p
+                  | Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text.
+                  p
+                  a(href='#') View Project
+              .block-3.d-md-flex.ftco-animate(data-scrollax-parent='true')
+              a.image.d-flex.justify-content-center.align-items-center(href='portfolio-single.html', style="background-image: url('images/work-3.jpg'); ", data-scrollax=" properties: { translateY: '-30%'}")
+                  .icon.d-flex.text-center.justify-content-center.align-items-center
+                  span.icon-search
+              .text
+                  h4.subheading Web Design
+                  h2.heading
+                  a(href='portfolio-single.html') Even the all-powerful Pointing has no control
+                  p
+                  | Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text.
+                  p
+                  a(href='#') View Project
+              .block-3.d-md-flex.ftco-animate(data-scrollax-parent='true')
+              a.image.order-2.d-flex.justify-content-center.align-items-center(href='portfolio-single.html', style="background-image: url('images/work-4.jpg'); ", data-scrollax=" properties: { translateY: '-30%'}")
+                  .icon.d-flex.text-center.justify-content-center.align-items-center
+                  span.icon-search
+              .text.order-1
+                  h4.subheading Application
+                  h2.heading
+                  a(href='portfoli-singleo.html') Even the all-powerful Pointing has no control
+                  p
+                  | Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text.
+                  p
+                  a(href='#') View Project
+              .block-3.d-md-flex.ftco-animate(data-scrollax-parent='true')
+              a.image.d-flex.justify-content-center.align-items-center(href='portfolio-single.html', style="background-image: url('images/work-5.jpg'); ", data-scrollax=" properties: { translateY: '-30%'}")
+                  .icon.d-flex.text-center.justify-content-center.align-items-center
+                  span.icon-search
+              .text
+                  h4.subheading Animation
+                  h2.heading
+                  a(href='portfoli-singleo.html') Even the all-powerful Pointing has no control
+                  p
+                  | Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text.
+                  p
+                  a(href='#') View Project
+              .block-3.d-md-flex.ftco-animate(data-scrollax-parent='true')
+              a.image.order-2.d-flex.justify-content-center.align-items-center(href='portfolio-single.html', style="background-image: url('images/work-6.jpg'); ", data-scrollax=" properties: { translateY: '-30%'}")
+                  .icon.d-flex.text-center.justify-content-center.align-items-center
+                  span.icon-search
+              .text.order-1
+                  h4.subheading Branding
+                  h2.heading
+                  a(href='portfoli-singleo.html') Even the all-powerful Pointing has no control
+                  p
+                  | Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text.
+                  p
+                  a(href='#') View Project
+      section#section-counter.ftco-section.ftco-counter
+          .container
+          .row.justify-content-center.mb-5.pb-5
+              .col-md-7.text-center.heading-section.ftco-animate
+              span Portfolio
+              h2 I love to share my achievements
+          .row.d-flex.justify-content-start
+            .col-md-5.col-sm-5.counter-wrap.ftco-animate
+            .block-18
+                .text
+                span.ftco-label Clients
+                strong.number(data-number='420') 0
+          .row.d-flex.justify-content-center
+            .col-md-5.col-sm-5.counter-wrap.ftco-animate
+            .block-18
+                .text
+                span.ftco-label Project done
+                strong.number(data-number='890') 0
+          .row.d-flex.justify-content-end
+            .col-md-5.counter-wrap.ftco-animate
+            .block-18
+                .text
+                span.ftco-label Cups of coffee
+                strong.number(data-number='1000') 0
+      footer.ftco-footer.ftco-bg-dark.ftco-section
+        .container
+        .row.mb-5.justify-content-center
+          .col-md-5.text-center
+          .ftco-footer-widget.mb-5
+            ul.ftco-footer-social.list-unstyled
+            li.ftco-animate
+              a(href='#')
+              span.icon-twitter
+            li.ftco-animate
+              a(href='#')
+              span.icon-facebook
+            li.ftco-animate
+              a(href='#')
+              span.icon-instagram
+            .ftco-footer-widget
+              h2.mb-3 Contact Us
+              p.h3.email
+              a(href='#')
+                  span.__cf_email__(data-cfemail='620b0c040d22070f030b0e4c010d0f') [email&nbsp;protected]
+          .row
+              .col-md-12.text-center
+              p
+                | Copyright &copy;
+                script(data-cfasync='false', src='/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js')
+                script.
+                document.write(new Date().getFullYear())
+                |  All rights reserved | This template is made with 
+                i.icon-heart(aria-hidden='true', style='color: red;')
+                |  by 
+                a(href='https://colorlib.com', target='_blank') Colorlib
+      #ftco-loader.show.fullscreen
+          svg.circular(width='48px', height='48px')
+          circle.path-bg(cx='24', cy='24', r='22', fill='none', stroke-width='4', stroke='#eeeeee')
+          circle.path(cx='24', cy='24', r='22', fill='none', stroke-width='4', stroke-miterlimit='10', stroke='#F96D00')

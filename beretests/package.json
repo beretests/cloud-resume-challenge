@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "devstart": "nodemon ./bin/www",
+    "devstart": "nodemon ./bin/www & npm run scss",
     "serverstart": "DEBUG=beretests:* npm run devstart",
     "scss": "sass --watch scss/style.scss public/stylesheets/style.css"
   },

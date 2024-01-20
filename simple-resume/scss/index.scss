@@ -19,12 +19,13 @@ body {
     background-size: cover;
     background-position: center;
     text-align: center;
-
   }
 }
 
 .container {
-  h2 {
+  z-index: 4;
+  h1 {
+    font-size: 4rem;
     text-align: center;
     margin-top: 200px;
     color: #FFC0FF;
@@ -36,17 +37,6 @@ body {
     color: #804080;
   }
 
-  h4 {
-    text-align: center;
-    margin-top: 200px;
-    color: #FFC0FF;
-  }
-
-  h5 {
-    text-align: center;
-    margin-top: 10px;
-    color: #804080;
-  }
   i {
     color: #FFC0FF;
     $fa-sizes: 2xl;
